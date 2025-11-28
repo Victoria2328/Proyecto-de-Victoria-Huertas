@@ -1,0 +1,269 @@
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #0a0a0a, #1c1c1c); /* fondo negro a gris oscuro */
+  color: #f0f0f0; /* texto claro */
+  font-family: 'Poppins', Arial, sans-serif;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #111; /* fondo oscuro */
+  color: #f0f0f0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header .logo {
+  font-weight: bold;
+  font-size: 24px;
+  color: #e63946; /* acento rojo */
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+}
+
+.nav a {
+  color: #f0f0f0;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav a:hover {
+  background: #222;
+  color: #e63946;
+}
+
+
+.contenedor-titulos {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.titulo {
+  font-size: 3.4em;
+  margin-bottom: 0.4em;
+  color: #f0f0f0;
+}
+
+.subtitulo {
+  font-size: 1.5em;
+  color: #aaa;
+}
+
+
+.product-grid, #catalogo {
+  display: grid;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+}
+
+.producto {
+  background: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.8);
+}
+
+.producto img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.producto h3, .producto p {
+  color: #f0f0f0;
+  text-align: center;
+}
+
+.producto button {
+  background: #e63946;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.producto button:hover {
+  background: #d62828;
+}
+
+
+#carrito {
+  flex: 1;
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 20px;
+  color: #f0f0f0;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+  position: sticky;
+  top: 100px;
+}
+
+#carrito h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 6px;
+}
+
+#carrito ul {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+#carrito ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+#carrito ul li button.btn-eliminar {
+  margin-left: 10px;
+  background: #e63946;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 2px 6px;
+}
+
+#carrito button {
+  width: 100%;
+  background: #e63946;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#carrito button:hover {
+  background: #d62828;
+}
+
+
+.footer {
+  margin-top: 40px;
+  background: #111;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 14px;
+}
+
+
+.titulo-tienda {
+  font-size: 2rem;
+  color: #e63946;
+  text-shadow: 0 0 10px #e63946, 0 0 20px #f77f00;
+  margin-bottom: 30px;
+  padding: 20px 40px;
+  border-radius: 20px;
+  background: #111;
+  display: inline-block;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.titulo-tienda::after {
+  content: "✨";
+  position: absolute;
+  right: -30px;
+  top: 10px;
+  font-size: 1.5rem;
+}
+
+
+.barra-superior {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0 10px 0;
+}
+
+.barra-superior a {
+  text-decoration: none;
+  color: #e63946;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 8px 18px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.barra-superior a:hover {
+  background: #222;
+  color: #f77f00;
+}
+
+
+.a {
+  color: #004080;
+  text-decoration: none;
+}
+
+.a:hover {
+  text-decoration: underline;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.LLAVEROS-MANHWA-ANIME {
+  font-size: 1.5em;
+  color: #f0f0f0;
+}
+<style>
+    /* ... estilos anteriores ... */
+
+    .producto h3, .producto h4 {
+      margin: 5px 0;
+      color: #000; /* AÑADIDO: Color negro para el modelo y la marca */
+    }
+    .producto p {
+      color: #000; /* CAMBIADO: A #000 para el precio */
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    
+    /* ... estilos posteriores ... */
+  </style>
