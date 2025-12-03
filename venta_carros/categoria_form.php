@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <form method="POST">
         <label>Nombre:</label>
         <input class="form-control mb-3" name="nombre" value="<?= $nombre ?>" required>
-        <button class="btn btn-primary">Guardar</button>
+        <button type="btn btn-primary">Guardar</button>
         <a href="categorias.php" class="btn btn-secondary">Cancelar</a>
     </form>
 </div>
