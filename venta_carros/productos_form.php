@@ -81,10 +81,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <input type="hidden" name="id" value="<?= $id ?>">
 
         <label>Nombre</label>
-        <input type="text" name="nombre" class="form-control mb-3" value="<?= $nombre ?>" required>
+       <input type="text" name="nombre" class="form-control mb-3" value="<?= htmlspecialchars($nombre ?? '', ENT_QUOTES, 'UTF-8') ?>" required>
 
         <label>Marca</label>
-        <input type="text" name="marca" class="form-control mb-3" value="<?= $marca ?>" required>
+       <input type="text" name="marca" class="form-control mb-3" value="<?= htmlspecialchars($marca ?? '', ENT_QUOTES, 'UTF-8') ?>" required>
 
         <label>Precio</label>
         <input type="number" name="precio" class="form-control mb-3" value="<?= $precio ?>" required>
